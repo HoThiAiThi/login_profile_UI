@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    app:circularflow_defaultRadius="10dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+              android:layout_width="match_parent"
+              android:layout_height="?attr/actionBarSize"
+              android:background="#00BCD4"
+              android:id="@+id/toolbar">
+
+              <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00BCD4">
+                  <ImageButton
+                      android:layout_width="40dp"
+                      android:layout_height="30dp"
+                      android:background="@drawable/left_row">
+                  </ImageButton>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="#fff"
+                      android:layout_marginLeft="25dp"
+                      android:textSize="20sp"
+                      android:textStyle="bold"
+                      android:text="Back">
+
+                  </TextView>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="#fff"
+                      android:gravity="center"
+                      android:textSize="22sp"
+                      android:textStyle="bold"
+                      android:text="Profile">
+
+                  </TextView>
+                  <ImageButton
+                      android:layout_width="40dp"
+                      android:layout_height="30dp"
+                      android:layout_marginLeft="340dp"
+                      android:background="@drawable/settings">
+
+                  </ImageButton>
+
+              </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff">
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#00bcd4">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border_person"
+                app:srcCompat="@drawable/person" />
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/border_circle"
+                android:text="3"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:gravity="center|top"
+                android:layout_gravity="center|top"
+                android:layout_marginRight="-45dp"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:text="Hồ Thị Ái Thi"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="125"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="35sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Friends"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:layout_marginTop="-10dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="7dp"/>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="250"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="35sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Followers"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:layout_marginTop="-10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/border_top"
+                android:padding="15dp"
+                android:text="email: hothiaithi@gmail.com"
+                android:textColor="#00BCD4"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/border_center"
+                android:padding="15dp"
+                android:text="Phone: 0363395551"
+                android:textColor="#00BCD4"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/border_center"
+                android:padding="15dp"
+                android:text="skype: me007"
+                android:textColor="#00BCD4"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/border_bottom"
+                android:padding="15dp"
+                android:text="Web: cssauthor.com/"
+                android:textColor="#00BCD4"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
